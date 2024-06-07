@@ -17,13 +17,13 @@ app.get('/', (req,res)=>{
     res.send("getting ")
 })
 
-sequelize.sync({ force: true })
-  .then(() => {
-    console.log('Database synchronized');
-  })
-  .catch(err => {
-    console.error('An error occurred while synchronizing the database:', err);
-  });
+// sequelize.sync({ force: true })
+//   .then(() => {
+//     console.log('Database synchronized');
+//   })
+//   .catch(err => {
+//     console.error('An error occurred while synchronizing the database:', err);
+//   });
 
 
 //swagger Api's
