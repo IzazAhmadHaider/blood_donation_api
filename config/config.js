@@ -12,7 +12,8 @@ const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('devcares_blooddonation', 'devcares_izaz', 'VDH-_f!f2dFi', {
   host: '95.217.74.210',
-  dialect: 'mysql'   
+  // host: 'localhost', 
+  dialect: 'mysql'   ,
 });
 
 module.exports = sequelize;
