@@ -1,21 +1,21 @@
 {
     "version": 2,
-    "builds": [
-      { "src": "server.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      {
-        "src": "/categories/",
-        "dest": "/server.js"
+    "functions": {
+      "api/categories": {
+        "handler": "server.js",
+        "runtime": "@vercel/node"
       },
+      "api/getall": {
+        "handler": "server.js",
+        "runtime": "@vercel/node"
+      }
+    },
+    "rewrites": [
       {
-        "src": "/api/getall",
-        "dest": "/server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
+        "source": "/(.*)",
+        "destination": "/"
       }
     ]
   }
+  
   
