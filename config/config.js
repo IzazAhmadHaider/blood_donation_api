@@ -5,15 +5,15 @@ const Sequelize = require('sequelize');
 //   dialect: process.env.DIALECT
 // });
 
-// const sequelize = new Sequelize('blooddonation', 'root', '', {
-//   host: 'localhost',
-//   dialect: 'mariadb'
-// });
+const sequelize = new Sequelize('devcares_blooddonation', 'root', '', {
+  host: 'localhost',
+  dialect: 'mariadb'
+}); 
 
-const sequelize = new Sequelize('devcares_blooddonation', 'devcares_izaz', 'VDH-_f!f2dFi', {
-  host: '95.217.74.210',
-  // host: 'localhost', 
-  dialect: 'mysql'   ,
-});
+// const sequelize = new Sequelize('devcares_blooddonation', 'devcares_izaz', 'VDH-_f!f2dFi', {
+//   host: '95.217.74.210',
+//   // host: 'localhost', 
+//   dialect: 'mysql'   ,
+// });
 
 module.exports = sequelize;

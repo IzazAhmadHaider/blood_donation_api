@@ -9,7 +9,7 @@ const sequelize=require('../config/config')
     patientName: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
+    }, 
     age: {
       type: DataTypes.INTEGER,
     },
